@@ -1,0 +1,714 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    margin-left: 20px;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(174, 116, 6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+.navbar {
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    position: relative;
+    margin: 0 5px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-list a:hover {
+    color: #fff5f5be;
+}
+
+.dropdown-list {
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    display: none;
+    min-width: 150px;
+}
+
+.dropdown-list li {
+    margin: 0;
+}
+
+.dropdown-list a {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-list a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
+.buttonop {
+    margin-right: 15px;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.buttonop:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 100%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.buttonop:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.buttonop:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+}
+
+.buttonop:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.buttonop:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+/* nav bar finsh  */
+
+
+
+
+/* imag about start  */
+
+#Top1 {
+    min-height: 100vh;
+}
+
+#Top1 svg{
+    position: absolute;
+    top: 295px;
+    z-index: -1;
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    filter: blur(3px);
+}
+
+.image-container img.active {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.overlay h1 span {
+    font-size: 4rem;
+    margin: 0;
+    color: black;
+}
+
+
+
+.overlay p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+
+/* nav last and full first section  */
+
+
+
+/* next section start  */
+
+#our {
+    min-height: 100vh;
+    background-color: rgb(225, 224, 221);
+}
+
+
+.box1 {
+    width: 70%;
+}
+
+.my h4 {
+    color: rgba(143, 93, 2, 0.864);
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.my h1 span {
+    color: rgba(136, 90, 5, 0.829);
+    text-decoration: underline;
+
+}
+
+.my h1 {
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.my p {
+    padding-top: 20px;
+
+}
+
+
+/* button section 1  */
+
+/* From Uiverse.io by adamgiebl */
+.bt1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left: 0px;
+    margin-left: 80px;
+    gap: 60px;
+}
+#btn {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid rgb(148, 97, 3);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(164, 107, 2);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#btn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: rgb(121, 80, 3);
+    z-index: -1;
+}
+
+#btn:hover,
+#btn:focus {
+    color: white;
+}
+
+#btn:hover:before,
+#btn:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+#btn:active {
+    transform: scale(0.9);
+}
+
+
+
+.f1{
+    display: flex;
+    gap: 40px;
+}
+
+.inm{
+    margin-top: 85px;
+    margin-left: 30px;
+}
+.inm img {
+    width: 200px;
+
+}
+
+.f3{
+    width: 40%;
+}
+
+.f3 h1{
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.f3 h1:hover{
+    color: rgba(141, 93, 3, 0.505);
+}
+
+.f3 p{
+    padding-top: 10px;
+    color: black;
+}
+
+.d{
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+.d a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.d a:hover{
+    color: rgba(140, 91, 0, 0.695);
+}
+
+.f{
+    margin-left: 110px;
+}
+
+
+
+
+/* nwxt section  */
+
+.top12{
+    min-height: 150vh;
+    background-color: rgba(245, 245, 245, 0.829);
+}
+
+.poa{
+    margin-top: 20px;
+}
+
+.poa img{
+
+    width: 600px;
+}
+
+.h1{
+   border-left: 3px solid wheat ;
+    width: 40%;
+    position: relative;
+    top: 50px;
+    height: 30%;
+}
+.k{
+    position: absolute;
+    left: 600px;
+    top: 1420px;
+}
+.h1 h1{
+    color: black;
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+.h1 p{
+    margin-top: 15px;
+    color: black;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.bi{
+    position: absolute;
+    top: 160px;
+    border: 2px solid;
+}
+.laz{
+    display: flex;
+    margin-left: 100px;
+    gap: 50px;
+    margin-top: 80px;
+}
+
+
+
+
+
+/* 2nd image  */
+
+.tah{
+    display: flex;
+    margin-left: 100px;
+    gap: 90px;
+}
+
+.hat{
+    border-left: 3px solid wheat;
+    width: 40%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.hat p{
+    color: black;
+    margin-top: 10px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.hat h1{
+    color: orange;
+    margin-top: 30px;
+    font-size: 30px;
+    padding-left: 30px;
+
+}
+
+.pat img{
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    top: 1450px;
+    right: 40px;
+}
+
+
+
+/* section last  */
+
+
+.last1{
+    min-height: 150vh;
+}
+
+.ian{
+    display: flex;
+    padding-top: 100px;
+}
+
+
+.image-containersa {
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+    width: 300px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.overlayo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(144, 94, 1, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-containersa:hover .overlayo {
+    opacity: 1;
+}
+
+.image-containersa:hover .image {
+    transform: scale(1.1); /* Optional scaling effect on hover */
+}
+
+.heading {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.description {
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+/* .last num  */
+
+.anb{
+    width: 45%;
+}
+.anb h1{
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.ja{
+    width: 50%;
+    height: 200px;
+}
+.ja h1{
+    font-size: 40px;
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ja p{
+    padding-top: 10px;
+    color: black;
+}
+
+
+.gd{
+    padding-top: 20px;
+
+}
+
+.gd a{
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+    color: black;
+}
+
+.gd a:hover{
+    color: rgb(161, 106, 2);
+}
+
+.ban{
+    display: flex;
+    margin-left: 100px;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+
+.ia{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+/* foooter last  */
+
+
+
+
+
+.b {
+    background: black;
+    padding: 100px;
+
+}
+
+
+.b1 {
+    border: 2px solid;
+    width: 40%;
+}
+
+.b2 h1 {
+    padding-top: 10px;
+    font-size: 35px;
+    color: white;
+}
+
+.b2 h3 {
+    padding-top: 20px;
+    font-size: 19px;
+    color: white;
+
+}
+
+.b2 h2 {
+    font-size: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.nv {
+    margin-top: 25px;
+}
+
+.nv a {
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+    color: white;
+    transition: 1s;
+
+}
+
+.nv a:hover {
+    color: orange;
+}
+
+
+.bb {
+    display: flex;
+    gap: 100px;
+}
+
+.is {
+    position: relative;
+    bottom: 50px;
+    left: 95px;
+}
+
+.is img {
+    width: 400px;
+}
+
+
+.lyw i {
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+    bottom: 10px;
+    font-size: 20px;
+}
+
+.lyw i:hover {
+    color: orange;
+}
+
+.lyw h3 {
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    top: 495vh;
+    left: 400px;
+}
